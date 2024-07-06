@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css
+    ">
+</head>
+<body>
+    <div class="container">
+     <!--example 1-->
+    <h3 class="text-center text-danger">example 1</h3>
+    <h3 class="text-center mb-5">click the button to change the word</h3>
+    <button type="button" class="btn btn-primary mb-3" onclick="textChange()">click to changed the word</button>
+    <h3 class="text-center" id="t_c"> hellow</h3>   
+    <hr>
+    <!--example 2-->
+    <h3 class="text-center text-danger">example 2</h3>
+    <h3  class="text-center mb-5">click the button to show the date</h3>
+    <button onclick="showDate()" type="button" class="btn btn-primary mb-3">click to show date</button>
+    
+    <h3 id="s_date" class="text-center">date and time</h3>
+    <hr>
+    <!--ex 3-->
+    <h3 class="text-center text-danger">example 3</h3>
+    <h3  class="text-center mb-5">click the button to bloom/close the flower</h3>
+    <div class="flower">
+    <button onclick="flowerBloom()" type="button" class="btn btn-primary bloom_btn">Blooming Flower</button>
+    <button onclick="flowerClose()" type="button" class="btn btn-danger closs_btn">Close Flower</button>
+        
+    <img id="f_img" src="images/close flower.png" alt="">
+    </div>
+    <hr>
+    <!--ex 4-->
+    <h3 class="text-center text-danger">example 4</h3>
+    <h3  class="text-center mb-5">click the button to change the text color</h3>
+    <button onclick="colorChange()" type="button" class="btn btn-primary mb-5">change color</button>
+    <p id="c_change" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur consequatur quia. Omnis, magni inventore laboriosam eos eligendi hic nisi natus repudiandae! Ad, est! Libero minus maiores in commodi perferendis!</p>
+    <hr>
+    <!--ex 5-->
+    <h3 class="text-center text-danger">example 5</h3>
+    <h3  class="text-center mb-5">click the button to show or hide the text</h3>
+    <button onclick="showText()" type="button" class="btn btn-primary mb-5">show text</button>
+    <button onclick="hideText()" type="button" class="btn btn-danger mb-5">hide text</button>
+    <p id="sh_text" class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, aliquid?</p>
+    <hr>
+    <!--ex 6-->
+    <h3 class="text-center text-danger">example 6</h3>
+    <h3  class="text-center mb-5">click the button to show the text throw document.write</h3>
+    <button onclick="showTextDo()" type="button" class="btn btn-primary mb-5">document.write</button>
+    <hr>
+    <!--ex 7-->
+    <h3 class="text-center text-danger">example 7</h3>
+    <h3  class="text-center mb-5">click the button to show the alart</h3>
+    <button onclick="showAlart()" type="button" class="btn btn-primary mb-5">alart</button>
+    <hr>
+    <!--ex 8-->
+    <h3 class="text-center text-danger">example 8</h3>
+    <h3  class="text-center mb-5">click the button to show the texr into console</h3>
+    <button onclick="showConsole()" type="button" class="btn btn-primary mb-5">console.log</button>
+    <hr>
+    <!--ex 9-->
+    <h3 class="text-center text-danger">example 9</h3>
+    <h3  class="text-center mb-5">click the button to show the result</h3>
+    <button onclick="rAddition()" type="button" class="btn btn-primary mb-5">RESULT</button>
+    <h3 id="o_result" class="text-center">the result is</h3>
+    <hr>
+    <!--ex 10-->
+    <h3 class="text-center text-danger">example 10</h3>
+    <h3  class="text-center mb-5">creating javascript object</h3>
+    <img style="height: 200px; width: auto; " src="images/raihan.avif" alt="">
+    <button onclick="personDetail()" type="button" class="btn btn-primary mb-5">click to see person details</button>
+    
+    <p id="object_detail" ></p>
+    <p id="ob_col"></p>
+    <p id="ful_na"></p>
+    <hr>
+     <!--example 11-->
+     <h3 class="text-center text-danger">example 11</h3>
+     <h3>onmouseover event</h3>
+     <h3  class="text-center mb-5">move the mouse on the button to show the date</h3>
+     <button onmouseover="showDateByMouse()" type="button" class="btn btn-primary mb-3">move coursre on this</button>
+     
+     <h3 id="currnt_date" class="text-center">date and time</h3>
+     
+     <hr>
+     <!--example 12-->
+     <h3 class="text-center text-danger">example 12</h3>
+     <h3>use of length property</h3>
+     <p><b>"this is my first java practice"</b>the length of this quotated scentence in bellow</p>
+     <h3 id="t_l"></h3>
+     <hr>
+     <!--example 13-->
+     <h3 class="text-center text-danger">example 13</h3>
+     <h3>use of string method</h3>
+     <h2>find a character of a specific position of a string</h2>
+     <h3>"charAt()" method</h3>
+     <p>"BANGLADESH" 3 no character of the word in bellow</p>
+     <P id="ch_n"></P>
+     <hr>
+     <!--example 14-->
+     <h3 class="text-center text-danger">example 14</h3>
+     <h3>use of slice string method</h3>
+     <h6>click the button to slice 14-20 no character of the word</h6>
+     <button onclick="sliceWord()" type="button" class="btn btn-primary mb-5">slice the scentence</button>
+     <p id="slice_s"> kashmir is an awesome place</p>
+     <hr>
+     <!--example 15-->
+     <h3 class="text-center text-danger">example 15</h3>
+     <h3>convert alphabet from uppercase to lowercase</h3>
+     <button onclick="lowerScentence()" type="button" class="btn btn-primary mb-5">click for lowercase </button>
+     <h3 id="low_s">TIGHER IS ALWAYS HUNGRY</h3>
+     <button onclick="upperScentence()" type="button" class="btn btn-primary mb-5">click for uppercase </button>
+     <h3 id="upp_s">tigher is always hungry</h3>
+     <hr>
+     <!--example 16-->
+     <h3 class="text-center text-danger">example 16</h3>
+     <h3>string concat method</h3>
+     <h6>click the button to add al idividuals string data</h6>
+     <button onclick="concatAll()" type="button" class="btn btn-primary mb-5">add all</button>
+     <p id="con_s"> this is <br> my <br>first work</p>
+     <hr>
+     <!--example 17-->
+     <h3 class="text-center text-danger">example 17</h3>
+     <h3>String Search Methods :String startsWith()</h3>
+     <p>"today is friday" this string starts with friday</p>
+     <p id="s_w_method"></p>
+     <hr>
+     <!--example 18-->
+     <h3 class="text-center text-danger">example 18</h3>
+     <h3>String Search Methods :String endsWith()</h3>
+     <p>"today is friday" this string ends With with friday</p>
+     <p id="e_w_method"></p>
+     <hr>
+     <!--example 19-->
+     <h3 class="text-center text-danger">example 19</h3>
+     <h3>String Search Methods :String includes()</h3>
+     <p>"today is friday" is there any word like friday in this scentence?</p>
+     <p id="inc_method"></p>
+     <hr>
+     <!--example 20-->
+     <h3 class="text-center text-danger">example 20</h3>
+     <h3>use of template string </h3>
+     <p id="tamp_st"></p>
+
+    
+
+
+
+   
+
+       
+
+          
+
+    
+       
+    
+        
+           
+              
+
+
+
+
+
+
+
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- script link -->
+    <script src="java sc/bootstrap.bundle.min.js"></script>
+    <script src="java sc/script.js"></script>
+</body>
+</html>
